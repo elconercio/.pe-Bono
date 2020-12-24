@@ -1,0 +1,644 @@
+*{
+    margin:0px; /* con * se colocan valores a todo , para que ningun html tenga margin ni padding*/
+    padding:0px;
+}
+.clearfix{
+    float:none;
+    clear:both; /*con esto limpiamos los flotados, la lista vuelve a estar abajo REVISAR*/
+}
+body{
+    background: white; 
+    background-attachment: fixed; /*para que no se acabe la imagen*/
+}
+
+#global{
+    width:73% ;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding:0px;
+    background: white;
+    box-shadow: 0px 0px 2px gray; /*sombra que casi no se ve*/
+}
+
+#logo{
+    font-family: 'Old English Text MT';    
+    font-size: 47px;
+    background: #f7c600;
+    height: 90px;
+    color:black;
+    text-align:center;
+    line-height: 12.8px;
+    float: left; /*empuja el elemento hacia una dirección*/
+    margin-bottom: 0px;
+    line-height: 88px;/*altura de la linea de texto*/
+    width: 100%;
+
+}
+
+
+#menu{
+    font-family: helvetica;
+    background:#555;
+    width:980px; /*completar el ancho del div contenedor*/
+    height: 46px;
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+
+}
+
+#menu li{
+    color: #fff;
+    line-height: 17px;
+    display: flex;
+    line-height: 46px;
+    list-style: none; /*no muestra los puntos de la lista*/
+    
+}
+#menu ul li{
+    
+    height: 46px;
+     /*elementos en fila pero se alinean vertical*/
+    transition: 100ms;
+}
+
+#menu a{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: block;
+    color:white;
+    text-decoration: none; /*quita el subrayado de link*/
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 790;
+    justify-content: space-between ;
+    font-size: 14px;
+
+}
+
+/*botones*/
+#buscar{
+    width: 30px;
+    height: 28px;
+    margin-top: 14px;
+    margin-left: 14px;
+    cursor: pointer;
+
+}
+.barras{
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    font-family: "verdana";
+    width: 80px;
+    color:white;
+    font-size: 10px;
+    font-weight: 700;
+    background-color:#555;
+    border: none;
+    margin-top: 8px;
+
+}
+ .barras i {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+
+#suscribirse{ 
+    border-radius: 4px;
+    cursor: pointer;
+    height: 37px;
+    font-family: "Noto Serif SC",serif;
+    width: 100px;
+    margin-left: 65px;
+    color:#444;
+    font-size: 17px;
+    font-weight: 700;
+    background-color:white;
+}
+
+#iniciar{
+    border-radius: 4px;
+    cursor: pointer;
+    height: 37px;
+    font-family: "Noto Serif SC",serif;
+    width: 80px;
+    margin-left: 10px;
+    color:#444;
+    font-size: 17px;
+    font-weight: 700;
+    background-color:white;
+}
+
+
+
+#menu ul li :hover{
+    background:#f7c600 ;
+}
+
+/*carrusel*/
+ #hoy{
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-family: 'Franklin',sans-serif;
+    align-self: center; /*alineamiento vertical*/
+    font-size: 10px;
+    font-weight: 750;
+    white-space: nowrap;
+    font-size: verdana;
+    color:#555;
+}
+#contenedor-carrusel {
+    width: 100%;
+    padding: 5px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    height: 20px;
+   
+    
+}
+#contenedor-carrusel ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+    
+    
+}
+#contenedor-carrusel li{
+    list-style: disc;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-left:20px;
+    margin-right: 5px;
+    color:gray;
+}
+#contenedor-carrusel a{
+    font-size: 20px;
+    font-family: "Noto Serif SC",serif;
+    line-height: 24px;
+}
+#clube{
+    background:gray;
+    width: 180px;
+    text-align: center;
+
+   }
+#contenedor-carrusel #club {
+color:white;
+font-size: 20px;
+text-align: center;
+align-self: center;
+line-height: 25px;
+}
+#contenedor-carrusel a{
+    text-decoration: none;
+    color:gray;
+    font-weight: 700;
+    align-self: center;
+}
+
+#fecha{
+    font-family: 'Franklin',sans-serif;
+    color:gray;
+    font-weight: 500;
+    list-style:none;
+    font-size: 9px;
+    align-self: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+#flechaIzquierda{
+    width: 10px;
+    margin:5px;
+    margin-bottom: 20px;
+}                    
+   
+#flechaDerecha{
+    align-self: center;
+    width: 20px;
+    margin:5px;
+    margin-bottom: 20px;
+    
+}
+/*bono*/
+#fondoregistro{
+    width:100%;
+    height:40%;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+}
+
+.fondo {
+    width: 60%;
+    margin-top: 10px;
+    height: 350px;
+    background:linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("https://www.eluniverso.com/sites/default/files/styles/powgallery_1024/public/fotos/2020/11/peru-nuevo_gabinete_60872.jpg-40762_1.jpg?itok=WPJtrl6t");
+    background-size: cover; /*la imagen se acomoda al div*/
+}
+
+
+#contenedorBono #headBono{
+    margin-bottom: 10px;
+}
+#contenedorBono #headBono a{
+    font-size:28px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    bottom: 0px;
+}
+#contenedorBono #parrafoBono {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#contenedorBono #pieBono a{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+#contenedorBono{
+    margin-left: 20px;
+    width: 70%;
+    margin-top: 180px;
+    float: left;
+    bottom: 0;
+    position: relative;
+
+}
+
+/*------REGISTRO BONO-------------------------*/
+#contenedorRegistro{
+    margin-top: 10px;
+    width: 40%;
+    height: 100%;
+    right:0px;
+    position: relative;
+   float: right;
+}
+#registro{
+    font-family:Helvetica;
+    width: 100%;
+    float: right;
+}
+#parrafoto{
+    width: 100%;
+    margin-top: 5px;
+}
+
+#parrafoto #parraBody{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 38px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#parrafoto #parraBody a{
+    text-decoration: none;
+    color:rgb(94, 94, 94);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#parrafoto .parrapie{
+    
+    margin-left: 38px;
+    margin-top: 10px;
+    
+}
+#parrafoto .parrapie a{
+    text-decoration: none;
+    font-size: 12px;
+    color:rgb(94, 94, 94);
+    font-size: 12px;
+    font-weight: 500;
+}
+#parrafoto #minsa{
+        width: 25%;
+        height: 88px;
+        background-size: cover;
+        margin-left:10px;
+        margin-right: 25px;
+        float: right;
+    
+}
+
+#parrafotoH{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    }
+
+   
+#nota1,#nota2,#nota3{
+    margin:8px ;
+    width: 32%;
+    height: 380px;
+    position: relative;
+
+    
+}
+#nota1 #foton1{
+    margin-top: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+#nota1 #foton1 img{
+    background-size: cover;
+    margin:10px;
+    width: 265px;
+    margin-left: 20px;
+    height: 200px;
+}
+#nota1 #headBono1{
+    
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+#nota1 #headBono1 a{
+    font-weight: 650;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(94, 94, 94);
+    text-decoration: none;
+}
+
+#nota1 #parrafoBono1{
+    margin-left:18px;
+    margin-right: 24px;
+    text-align: left;
+    ;
+}
+#nota1 #parrafoBono1 a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(94, 94, 94);
+    text-decoration: none;
+}
+
+#nota1 #pieBono1 {
+    margin-left: 18px;
+    margin-top: 10px;
+}
+#nota1 #pieBono1 a{
+    text-decoration: none;
+    color:rgb(94, 94, 94);
+text-align: center;
+}
+#noticias{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:rgb(94, 94, 94);
+}
+
+#post{
+    display: grid;
+    grid-template-columns: 305px 305px 305px;
+    font-family: "Noto Serif SC",serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:rgb(80, 79, 79);
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+#post h2{
+    border: none;
+}
+
+.post{
+    padding:5px;
+    
+
+}
+·post h2{
+    font-size: 30px;
+    color: #333;
+    
+}
+.post .date{
+    display:block;
+    color:gray;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.post p{
+    text-align: justify;  /*justifica el texto*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    line-height: 20px; /*separacion de las lineas*/
+}
+
+
+.button-more{
+    font-size: 14px;
+    display: block;
+    padding:15px;
+    background:#f7c600;
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 70px;
+    text-align: center;
+}
+.ipost{
+    margin-left: 10px;
+    width:90%;
+}
+
+
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding:5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray; /* x y z (z=amplitud de la sombra)*/
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background:#ccc;
+    padding:10px;
+    border: 1px solid #ccc;
+    color:#333;
+    cursor: pointer;
+}
+
+footer{
+    font-family: helvetica, arial;
+    color:white;
+    height: 47px;
+    background:rgba(51, 51, 51, 0.70);
+    margin:0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{ /*2 clases selecionadas a la vez loko*/
+    height: 250px !important;
+}
+.bxslider img{
+    width: 100%;
+}
+
+#pie {
+    text-align: center;
+}
+
+/*responsive*/
+@media screen and (max-width: 1255px){
+
+    
+    .fondo{
+       width :98%;
+       margin-bottom: 10px;
+       
+
+    }
+    #contenedorBono{
+        position: relative;
+        bottom: 0;
+    }
+    
+    
+    #fondoregistro{
+        height: 700px;
+        display: grid;
+        grid-row: 50% 50%; 
+
+    }
+    
+    #contenedorRegistro{
+        width: 100%;
+        height: 200px;
+        float: left;
+        display: flex;
+       
+    }
+    
+    #contenedorRegistro #parrafoto{
+            border:solid rgb(204, 203, 203) 1px;
+        margin-right: 20px;
+
+    }
+    #parrafoto #parraBody, #parrapie, img{
+        margin-top: 5px;
+    }
+    
+    #parrafotoH{
+        display:grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+    #nota1{
+        width: 100%;
+    }
+    #foton1 {
+        text-align: center;
+    }
+
+    #post{
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+    #post img{
+        width: 90%;
+    }
+    
+ }
+ @media screen and (max-width: 1255px){
+    #menu li{
+        overflow: hidden;
+        display: none;
+    }
+    #menu{
+        display: flex;
+    }
+    #menu #iniciar{
+        float: right;
+  
+}
+
+}
+
+ @media screen and (max-width: 1086px){
+    #contenedorRegistro{
+        width: 100%;
+        height: 500px;
+        float: left;
+        display: flex;
+ } #parrafoto{
+     display: grid;
+     grid-row: 100%;
+     height: 300px;
+ }
+ 
+ #parrafoto #minsa{
+     width: 80%;
+     height: 120px;
+ }
+ @media screen and (max-width: 800px){
+    #navidad, #AFP,#fecha{
+        display: none;
+        list-style: none;
+    } 
+    
+    #contenedorRegistro{
+        width: 100%;
+        height: 400px;
+        float: left;
+        display: flex;
+ } #parrafoto{
+     display: grid;
+     grid-row: 100%;
+     height: 350px;
+
+ }
+ #parrafoto #parraBody{
+     margin-bottom: 0px;
+ }
+
+ #parrafoto #minsa{
+     width: 80%;
+     height: 120px;
+ }
+ #post p{
+     width: 90%;
+
+    }
+
+}
+}
